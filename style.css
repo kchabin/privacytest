@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+.start-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+.start {
+  font-family: 'Freesentaion-8ExtraBold';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.progress-bar {
+  background-image: linear-gradient(to right, #e3b6ab, #ef8282); 
+}
+.button-container {
+  display: flex;
+  justify-content: center;  
+  gap: 10px;
+  width: 100%;  
+  padding: 10px;  
+}
+.copy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+.restart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  border: 2px solid #ef8282; /* Corrected border property */
+  border-radius: 10px;
+  background-color: #ef8282; 
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+.restart-button:hover {
+  background-color: #d76868; /* Background color on hover */
+  border-color: #d76868; /* Border color on hover */
+}
+.copy-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ef8282;
+  border: 2px solid #ef8282; /* Border style */
+  border-radius: 8px; /* Border radius */
+  background-color: #ffffff; /* Optional background color */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+.copy-button:hover {
+  background-color: #e0e0e0; /* Background color on hover */
+  border-color: #d76868; /* Border color on hover */
+  color: #d76868;
+}
+.btn {
+  background-color: #808080;
+  border-color: #808080;
+}
+.question {
+  display: none;
+}
+.questionMain {
+  font-family: 'Freesentation-6SemiBold';
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+.result {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  font-family: 'Freesentation-7Bold';
+  font-weight: bolder;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.resulttitle {
+  font-family: 'Freesentation-7Bold';
+  font-size: 30px;
+  text-align: center; 
+  margin-bottom: 30px;
+}
+.resulttitle2 {
+  font-family: 'Freesentation-7Bold';
+  font-size: 30px;
+  text-align: center; 
+  margin-bottom: 30px;
+}
+.resultcontent {
+  font-family: 'Freesentation-4Regular';
+  font-size: 20px;
+  text-align: center; 
+  margin-bottom: 30px;
+}
+
+#img {
+  width: 320px; 
+  height: 320px; 
+  margin: 0 auto;
+}
+.share {
+  margin: 0 auto;
+}
+.questionMain:before {
+  color: black;
+  content: '"';
+  font-size: 30px;
+}
+.questionMain:after {
+  color: black;
+  content: '"';
+  font-size: 30px;
+}
+.link-wrapper {
+  text-align: center; /* Center align the content inside */
+}
+.link-wrapper a {
+  display: block; /* Makes the anchor behave like a block element */
+  margin: 0 auto; /* Centers the block element */
+}
+
+
+
+/*font 추가*/
+@font-face {
+  font-family: 'Freesentation-1Thin';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-1Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation-2ExtraLight';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-2ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation-3Light';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-3Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation-4Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation-5Medium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation-6SemiBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation-7Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-7Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation-8ExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-8ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation-9Black';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+.back-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* 부모 요소의 너비를 100%로 설정 */
+}
+.back {
+  height: 100px;
+  border: 10px solid #ffffff;
+  box-sizing: border-box;
+  padding: 5px;
+  font-family: 'Freesentation-6SemiBold';
+  margin: 0 auto; /* 요소를 수평으로 가운데 정렬 */
+}
+.back:before {
+  position: absolute;
+  padding: 10px;
+}
+@media screen and (max-width: 1260px) {
+  .back {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 840px) {
+  .back {
+    width: 100%;
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  height: 360px; /* 이미지 컨테이너의 높이 증가 */
+}
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#up:hover, #down:hover {
+  background-color: #f77777 !important;
+  color: #ffffff; 
+}
+@media (max-width: 768px) {
+  .questionMain {
+    font-size: 25px;
+  }
+  .subtitle {
+    font-size: 40px;
+  }
+  .resulttitle, .resulttitle2 {
+    font-size: 25px;
+  }
+  .resultcontent {
+    font-size: 18px;
+  }
+  #img {
+    width: 240px;
+    height: 240px;
+  }
+  .button_base {
+    font-size: 16px;
+    width: 180px;
+    height: 45px;
+  }
+  .image-container {
+    height: 240px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .questionMain {
+    font-size: 28px;
+  }
+  .subtitle {
+    font-size: 45px;
+  }
+  .resulttitle, .resulttitle2 {
+    font-size: 28px;
+  }
+  .resultcontent {
+    font-size: 19px;
+  }
+  #img {
+    width: 300px;
+    height: 300px;
+  }
+  .button_base {
+    font-size: 17px;
+    width: 190px;
+    height: 47px;
+  }
+  .image-container {
+    height: 320px;
+  }
+}
