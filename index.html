@@ -9,8 +9,9 @@
     content="나의 개인정보보호 인식 수준을 테스트해보는 사이트" 
   />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="개인정보보호 진단 테스트" />
-  <meta property="og:description" content="개인정보보호 유출 위험 유형 테스트" />
+  <meta property="og:url" content="https://kchabin.github.io/privacytest/" />
+  <meta property="og:title" content="개인정보보호 유출 위험 유형 테스트" />
+  <meta property="og:description" content="나의 개인정보보호 인식 수준을 테스트해보는 사이트" />
   <meta property="og:image" content="img/start.png" />
   
   <!--bootstrap 5.2.3(latest)-->
@@ -22,6 +23,17 @@
   <!--favicon 추가-->
   <link rel="icon" href="img/favicon.png">
   
+  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js" 
+    integrity="sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4" crossorigin="anonymous"></script>
+
+  <script>
+    // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해야 합니다.
+    Kakao.init('e3404fa803ead3dbaf31336f1c7051aa');
+    // SDK 초기화 여부를 판단합니다.
+    Kakao.isInitialized();
+    
+  </script>
+
 </head>
 <body class="container">
   <!--시작 화면 및 이미지-->
@@ -82,7 +94,12 @@
           <button type="button" class="copy-button" onclick="copyUrl()">
               링크 복사하기
           </button>
+          
       </div>  
+       
+      <a id="kakao-link-btn" href="javascript:kakaoShare()">
+        <img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+      </a>
     </div>
 
     <script>
@@ -95,7 +112,20 @@
                 alert("다른 사람들에게 이 테스트를 공유해주세요!");
             });
         }
+
     </script>
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js"
+    integrity="sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4" crossorigin="anonymous"></script>
+  <script>
+    Kakao.init('c089c8172def97eb00c07217cae17495'); // 사용하려는 앱의 JavaScript 키 입력
+  </script>
+  
+  <a id="kakaotalk-sharing-btn" href="javascript:;">
+    <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+      alt="카카오톡 공유 보내기 버튼" />
+  </a>
+  
+   
 
   </article>
   <input type="hidden" id="a" value="0" />
@@ -327,7 +357,35 @@
           num++;
       }
   }
-
-  </script>
+  
+  function kakaoShare() {
+    Kakao.Share.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: "개인정보보호 유출 위험 유형 테스트",
+        description: "나의 개인정보보호 인식 수준을 테스트해보는 사이트",
+        imageUrl: 'https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+        link: {
+          mobileWebUrl: 'https://kchabin.github.io/privacytest/',
+          webUrl: 'https://kchabin.github.io/privacytest/',
+        },
+      },
+      
+      buttons: [
+          {
+            title: '나도 테스트 하러가기',
+            link: {
+              mobileWebUrl: 'https://kchabin.github.io/privacytest/',
+              webUrl: 'https://kchabin.github.io/privacytest/',
+            }
+          }
+      ],
+      installTalk: true,
+    })
+  
+  }
+</script>
+  
+  
 </body>
 </html>
