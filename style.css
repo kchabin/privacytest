@@ -107,15 +107,18 @@ article {
   text-align: center; 
   margin-bottom: 30px;
 }
-
+.share-title {
+  font-family: 'Freesentation-6SemiBold';
+  font-size: 20px;
+  text-align: center; 
+  margin-bottom: 30px;
+}
 #img {
   width: 320px; 
   height: 320px; 
   margin: 0 auto;
 }
-.share {
-  margin: 0 auto;
-}
+ 
 .questionMain:before {
   color: black;
   content: '"';

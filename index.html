@@ -87,6 +87,7 @@
           다시 테스트하기
       </button>
     </div>
+    <h6 class="share-title">친구에게 테스트 공유하기</h6>
     <div class="button-container">
       <button type="button"  class="copy-button" onclick="copyUrl()">
         링크 복사하기
@@ -105,7 +106,7 @@
         function copyUrl() { 
             //nowUrl 변수에 담긴 주소를
             navigator.clipboard.writeText(nowUrl).then(res => {
-                alert("다른 사람들에게 이 테스트를 공유해주세요!");
+                alert("다른 사람들에게 이 테스트를 공유해보세요!");
             });
         }
 
@@ -345,62 +346,24 @@
       }
   }
   
- 
-    /*Kakao.Share.sendDefault({
-      objectType: 'feed',
-      content: {
-        title: "개인정보보호 유출 위험 유형 테스트",
-        description: "나의 개인정보보호 인식 수준을 테스트해보는 사이트",
-        imageUrl: 'https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
-        link: {
-          mobileWebUrl: 'https://kchabin.github.io/privacytest/',
-          webUrl: 'https://kchabin.github.io/privacytest/',
-        },
-      },
-      
-      buttons: [
-          {
-            title: '나도 테스트 하러가기',
-            link: {
-              mobileWebUrl: 'https://kchabin.github.io/privacytest/',
-              webUrl: 'https://kchabin.github.io/privacytest/',
-            }
-          }
-      ],
-      installTalk: true,
-    })*/
-    
-  
-  
-</script>
-  
- 
-
-
-
-<script>
   Kakao.Share.createDefaultButton({
     container: '#kakaotalk-btn',
     objectType: 'feed',
     content: {
-      title: '딸기 치즈 케익',
-      description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+      title: "개인정보보호 유출 위험 유형 테스트",
+      desription: "나의 개인정보보호 인식 수준을 테스트해보는 사이트",
       imageUrl:
-        'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+        'img/start.png',
       link: {
         // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
         mobileWebUrl: 'https://privacytest.netlify.app',
         webUrl: 'https://privacytest.netlify.app',
       },
     },
-    social: {
-      likeCount: 286,
-      commentCount: 45,
-      sharedCount: 845,
-    },
+     
     buttons: [
       {
-        title: '웹으로 보기',
+        title: '나도 테스트하러 가기',
         link: {
           mobileWebUrl: 'https://privacytest.netlify.app',
           webUrl: 'https://privacytest.netlify.app',
@@ -409,6 +372,9 @@
       
     ],
   });
+  
 </script>
+  
+ 
 </body>
 </html>
