@@ -54,14 +54,26 @@ article {
   cursor: pointer;
   color: #ef8282;
   border: 2px solid #ef8282; /* Border style */
-  border-radius: 8px; /* Border radius */
+  border-radius: 10px; /* Border radius */
   background-color: #ffffff; /* Optional background color */
   transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+  margin-bottom: 30px;
 }
 .copy-button:hover {
   background-color: #e0e0e0; /* Background color on hover */
   border-color: #d76868; /* Border color on hover */
   color: #d76868;
+  
+}
+#kakaotalk-btn {
+  background-color: #ffe812;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 30px;
 }
 .btn {
   background-color: #808080;
@@ -111,14 +123,15 @@ article {
   font-family: 'Freesentation-6SemiBold';
   font-size: 20px;
   text-align: center; 
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 #img {
   width: 320px; 
   height: 320px; 
   margin: 0 auto;
 }
- 
+
 .questionMain:before {
   color: black;
   content: '"';
