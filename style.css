@@ -104,7 +104,8 @@ article {
 .resulttitle {
   font-family: 'Freesentation-7Bold';
   font-size: 30px;
-  text-align: center; 
+  text-align: center;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .resulttitle2 {
