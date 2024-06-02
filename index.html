@@ -42,15 +42,16 @@
     <div style="display: flex; justify-content: center;">
       <img src="img/start.png" class="img-fluid" alt="home illust" style="height:22rem;">
     </div>
-    <footer class="footer">
-      <p>테스트  출처: 서울여자대학교 인터넷 윤리센터</p>
-    </footer>  
+    
   </div>
   <!--테스트 설명 및 시작 버튼-->
   <div class="start-btn">
     <p class="mt-5 text-center" style="font-size:1rem;">내 개인정보보호 수준을 알아보자!</p>
     <button type="button" style="margin-top:25px !important; font-size:0.88rem; background-color: #f77777; color: white; border-radius:50px; border: #f77777; width:55%;" class="btn btn-primary mt-5" onclick="start();">테스트 시작하기</button>
   </div>
+  <footer class="footer">
+    <p>테스트  출처: 서울여자대학교 인터넷 윤리센터</p>
+  </footer> 
   <!--질문 페이지-->
   <article class="question">
     <div class="progress mt-5">
@@ -112,7 +113,9 @@
       </button>
       
     </div>
-
+    <footer class="last-footer">
+      <p>테스트  출처: 서울여자대학교 인터넷 윤리센터</p>
+    </footer> 
     <script>
         //현재 url 변수로 가져오기
         let nowUrl = window.location.href;
@@ -125,10 +128,7 @@
         }
 
     </script>
-    <footer class="footer">
-      <p>테스트  출처: 서울여자대학교 인터넷 윤리센터</p>
-    </footer> 
-  
+    
    
 
   </article>
@@ -286,7 +286,11 @@
         questionElements.forEach(function(element) {
             element.style.display = "block";
         });
-
+        var footerElements = document.querySelectorAll(".footer");
+        footerElements.forEach(function(element) {
+            element.style.display = "none";
+        });
+        
         next();
     }
     
@@ -325,6 +329,7 @@
           document.querySelector("#subTitle").style.display = "block";
           document.querySelector("#explain").style.display = "block";
           document.querySelector("#explain2").style.display = "block";
+          
     
           var linkElement = document.querySelector("#link");
           if (linkElement) {
