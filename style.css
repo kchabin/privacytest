@@ -108,15 +108,15 @@ article {
   margin-bottom: 30px;
 }
 .resulttitle2 {
-  font-family: 'Freesentation-7Bold';
-  font-size: 30px;
+  font-family: 'Freesentation-5Medium';
+  font-size: 10px;
   text-align: center; 
   margin-bottom: 30px;
 }
 .resultcontent {
   font-family: 'Freesentation-4Regular';
   font-size: 20px;
-  text-align: center; 
+  text-align: left; 
   margin-bottom: 30px;
 }
 .share-title {
@@ -131,7 +131,13 @@ article {
   height: 320px; 
   margin: 0 auto;
 }
-
+.footer {
+  margin-top: auto;
+   
+  text-align: center;
+  padding:  0;
+  width: 100%;
+}
 .questionMain:before {
   color: black;
   content: '"';
@@ -143,13 +149,19 @@ article {
   font-size: 30px;
 }
 .link-wrapper {
-  text-align: center; /* Center align the content inside */
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* 링크들 사이의 간격 */
+  padding: 10px;
 }
 .link-wrapper a {
-  display: block; /* Makes the anchor behave like a block element */
-  margin: 0 auto; /* Centers the block element */
+  display: inline-block;
+  width: 96px; /* 고정된 너비 설정 */
 }
-
+.link-wrapper img {
+  width: 100%; /* 부모 요소의 너비에 맞춤 */
+  height: auto; /* 이미지 비율 유지 */
+}
 
 
 /*font 추가*/
